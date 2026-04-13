@@ -8,7 +8,8 @@ def cinema_visit(
         customers: list,
         hall_number: int,
         cleaner: str,
-        movie: str):
+        movie: str
+) -> None:
     customer_objs = [Customer(**c) for c in customers]
     for cust in customer_objs:
         CinemaBar.sell_product(product=cust.food, customer=cust)
