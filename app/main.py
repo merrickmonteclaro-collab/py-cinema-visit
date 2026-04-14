@@ -5,10 +5,10 @@ from app.cinema.hall import CinemaHall
 
 
 def cinema_visit(
+        movie: str,
         customers: list,
         hall_number: int,
-        cleaner: str,
-        movie: str
+        cleaner: str
 ) -> None:
     customer_objs = [Customer(**c) for c in customers]
     for cust in customer_objs:
